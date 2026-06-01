@@ -569,14 +569,14 @@ footer { border-top: 2px solid var(--border-gold); padding: 52px 24px 32px; text
     <div class="event-card reveal" style="transition-delay:0.25s"><div class="event-corner"></div>
       <div class="event-icon"><svg width="38" height="38" viewBox="0 0 40 40"><path d="M 14 24 L 20 12 L 26 24 Z" fill="none" stroke="#C9942A" stroke-width="1.2" opacity="0.65"/><path d="M 12 24 L 28 24" stroke="#C9942A" stroke-width="1.5" opacity="0.55"/><circle cx="20" cy="12" r="3" fill="#D4A017" opacity="0.45"/><path d="M 17 28 L 23 28 L 23 34 L 17 34 Z" fill="none" stroke="#C9942A" stroke-width="1" opacity="0.55"/></svg></div>
       <div class="event-name">Reception</div><div class="event-name-tamil">வரவேற்பு</div>
-      <div class="event-datetime">Sunday, 19 Jul 2026 · 06:00 PM</div>
+      <div class="event-datetime">Sunday, 19 Jul 2026 · 06:30 PM</div>
       <div class="event-desc">A celebratory evening of dinner and music in honor of the bride and groom.</div>
     </div>
     <div class="event-card reveal" style="transition-delay:0.3s;border-color:rgba(214,43,43,0.28);background:linear-gradient(135deg,rgba(255,245,245,0.9),rgba(255,250,240,0.95));">
       <div class="event-corner" style="background:rgba(214,43,43,0.07);"></div>
       <div class="event-icon"><svg width="38" height="38" viewBox="0 0 40 40"><path d="M 20 10 C 10 10 6 22 14 26 C 18 28 20 32 20 32 C 20 32 22 28 26 26 C 34 22 30 10 20 10 Z" fill="#D62B2B" opacity="0.12" stroke="#D62B2B" stroke-width="1.2"/><path d="M 20 18 C 18 18 16 20 16 22 C 16 24 18 26 20 26 C 22 26 24 24 24 22 C 24 20 22 18 20 18" fill="#D62B2B" opacity="0.4"/></svg></div>
       <div class="event-name" style="color:var(--red-dark);">Kalyanam · Wedding</div><div class="event-name-tamil">திருக்கல்யாணம்</div>
-      <div class="event-datetime" style="color:var(--red-bright);font-weight:600;">Monday, 20 Jul 2026 · 8:30 AM (Muhurtham)</div>
+      <div class="event-datetime" style="color:var(--red-bright);font-weight:600;">Monday, 20 Jul 2026 · 9:00 AM (Muhurtham)</div>
       <div class="event-desc">The divine union under the sacred Muhurtham — the tying of the Thali, the seven steps, and the beginning of one shared soul.</div>
     </div>
   </div>
@@ -835,7 +835,7 @@ document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>ro.o
    COUNTDOWN
    ============================================================ */
 function tick() {
-  const diff = new Date('2026-07-20T08:30:00+05:30') - Date.now();
+  const diff = new Date('2026-07-20T09:00:00+05:30') - Date.now();
   if (diff <= 0) { ['cd-days','cd-hours','cd-mins','cd-secs'].forEach(id=>document.getElementById(id).textContent='00'); return; }
   const pad = n => String(n).padStart(2,'0');
   document.getElementById('cd-days').textContent  = pad(Math.floor(diff/86400000));
